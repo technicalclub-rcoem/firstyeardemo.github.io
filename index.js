@@ -5,14 +5,12 @@ Stage(function (stage) {
 	var sign =Stage.image('x').appendTo(stage).pin('handle',0.5);
 
 	sign.on('click',function(){
-//issue 2
-
-		this.tween().ease('out').pin('rotation',++number*Math.PI/2);
-		// Issue related to speed of rotation
+		this.tween().ease('out').pin('rotation',++number*Math.PI);
+		this.tween().ease('out').pin('offsetX',10);
 
 	});
 });
-// issue 1 solved
+//issue 2
 Stage({
 
 	textures : {
