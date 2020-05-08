@@ -5,7 +5,7 @@ Stage(function (stage) {
 	var sign =Stage.image('x').appendTo(stage).pin('handle',0.5);
 
 	sign.on('click',function(){
-		this.tween().ease('out').pin('rotation',++number*Math.PI);
+		this.tween().ease('out').pin('rotation',++number*Math.PI/2);
 	});
 });
 
