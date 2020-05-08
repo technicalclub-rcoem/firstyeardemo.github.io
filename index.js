@@ -6,9 +6,11 @@ Stage(function (stage) {
 
 	sign.on('click',function(){
 		this.tween().ease('out').pin('rotation',++number*Math.PI);
+		this.tween().ease('out').pin('offsetX',10);
+
 	});
 });
-
+//issue 2
 Stage({
 
 	textures : {
