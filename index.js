@@ -6,9 +6,12 @@ Stage(function (stage) {
 
 	sign.on('click',function(){
 
-		this.tween().ease('out').pin('rotation',++number*Math.PI/2);
-		// Issue related to speed of rotation
-
+		this.tween().ease('out').pin({
+			'rotation':++number*Math.PI/2,
+			// Issue related to speed of rotation
+			'offsetX':10
+		});
+		
 	});
 });
 // issue 1 solved
